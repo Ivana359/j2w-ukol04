@@ -12,75 +12,36 @@ public class VizitkaService {
 
   public VizitkaService() {
     seznamVizitek.add(
-            new Vizitka(
-                    "Dita (Přikrylová) Formánková",
-                    "Czechitas z. s.",
-                    "Václavské náměstí 837/11",
-                    "11000 Praha 1",
-                    "dita@czechitas.cs",
-                    "+420 800123456",
-                    "www.czechitas.cz"
-            )
-    );
-    seznamVizitek.add(
-            new Vizitka(
-                    "Barbora Bühnová",
-                    "Czechitas z. s.",
-                    "Škrobárenská 511/3",
-                    "61700 Brno",
-                    null,
-                    "+420 800123456",
-                    "www.czechitas.cz"
-            )
-    );
-    seznamVizitek.add(
-            new Vizitka(
-                    "Monika Ptáčníková",
-                    "Czechitas z. s.",
-                    "Technologická 372/2",
-                    "70800 Ostrava-Pustkovec",
-                    "monika@czechitas.cs",
-                    "+420 800123456",
-                    "www.czechitas.cz"
-            )
-    );
-    seznamVizitek.add(
-            new Vizitka(
-                    "Mirka Zatloukalová",
-                    "Czechitas z. s.",
-                    "Vavrečkova 5262",
-                    "76001 Zlín",
-                    "mirka@czechitas.cs",
-                    null,
-                    "www.czechitas.cz"
-            )
-    );
-    seznamVizitek.add(
-            new Vizitka(
-                    "Ondřej Čejka",
-                    "Czechitas z. s.",
-                    "Jungmannova 3",
-                    "77900 Olomouc",
-                    null,
-                    null,
-                    "www.czechitas.cz"
-            )
-    );
-    seznamVizitek.add(
-            new Vizitka(
-                    "Kateřina Reiglová",
-                    "Czechitas z. s.",
-                    "Lipová 1789/9",
-                    "37005 České Budějovice",
-                    null,
-                    null,
-                    "www.czechitas.cz"
-            )
-    );
-  }
+              new Vizitka("Richard Dobrý", "Tlamagames", "Dlážděná 78", "Tmaň 26721", "info@tlamagames.com","www.tlamagames.com","+420 444555666"));
+      seznamVizitek.add(
+              new Vizitka("Lenka Láskorádová", "Zatrolené hry", "Holandská 123", "Beroun 26601", null,"www.seznam.cz","777444111"));
+      seznamVizitek.add(
+              new Vizitka("Věra Skálová", "Planeta her", "Nad Stadionem 359", "Králův Dvůr 26701", "email01@seznam.cz","www.web.cz","777444222"));
+      seznamVizitek.add(
+              new Vizitka("Simona Veselá", "HRAS", "Na Pankráci 123", "Praha 14000", null, null,null));
+      seznamVizitek.add(
+              new Vizitka("Štěpánka Smutná", "Svět Her", "Dlážděná 77", "Tmaň 26721", "email07@seznam.cz",null,null));
+      seznamVizitek.add(
+              new Vizitka("Kateřina Kůrková", "Fift", "Holandská 122", "Beroun 26601", "email11@seznam.cz","www.web2.cz","777444444"));
+      seznamVizitek.add(
+              new Vizitka("Jana Hrubá", "Veselý drak", "Nad Stadionem 357", "Králův Dvůr 26701", "email02@seznam.cz",null,"777444555"));
+      seznamVizitek.add(
+              new Vizitka("Karolina Světlá", "Luxor", "Václavské náměstí 41", "Praha 11000", null,"www.neoluxor.cz","+420 666 777 444"));
+      seznamVizitek.add(
+              new Vizitka("Lucie Výborná", "Korálkycz", "Vinohradská 1678/76", "Praha 13000", "info@manumi.cz",null,"777444111"));
+      seznamVizitek.add(
+              new Vizitka("Jana Lukášová", "Korálky komponenty", "Karlovo Náměstí 317/5", "Praha 12000", "mail@koralkykomponenty.cz","koralkykomponenty.cz",null));
+
+    }
 
   public List<Vizitka> getAll() {
     return seznamVizitek;
+  }
+  public void pridejVizitku(Vizitka vizitka){
+      seznamVizitek.add(vizitka);
+  }
+  public void smazVizitku(int id){
+      seznamVizitek.remove(id);
   }
 
   public Vizitka getById(int id) {

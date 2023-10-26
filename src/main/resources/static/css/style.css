@@ -12,7 +12,7 @@ html {
 body {
     font: 10pt 'Raleway', sans-serif;
     color: black;
-    margin: 0;
+    margin: 80px;
     min-height: 100vh;
     background: white url(https://source.unsplash.com/uXtq8xGUX5U) center center/cover no-repeat;
 }
@@ -106,4 +106,14 @@ a:hover .vizitka {
     border: 1px solid gray;
     margin: 1em;
     box-shadow: 5px 5px 10px black;
+}
+.form-label {
+    color: white;
+    font-size: 18px;
+
+    font-family: "Times New Roman", serif;
+}
+.mt-5 {
+    color: white;
+    font-family: "Arial Black", serif;
 }
